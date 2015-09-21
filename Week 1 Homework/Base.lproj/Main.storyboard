@@ -1,0 +1,1500 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="OWR-nI-qBt">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Tua-MY-AWF">
+            <objects>
+                <navigationController id="OWR-nI-qBt" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Tbe-SI-Y6M">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="gbm-li-GST" kind="relationship" relationship="rootViewController" id="AX4-e8-ckO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fcs-QE-dF1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1893" y="494.25"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="BMk-xI-NUe">
+            <objects>
+                <viewController id="gbm-li-GST" customClass="ViewController" customModule="Week_1_Homework" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Gbr-8N-b8a"/>
+                        <viewControllerLayoutGuide type="bottom" id="vQv-n4-gOq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ptv-U0-OUA">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xfv-G3-gHd">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="23"/>
+                                <state key="normal" title="Giraffe">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="122" y="145" width="156" height="84"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="e7I-ob-YxW" kind="show" id="Ju9-gw-RGl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zfe-u4-AA6">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="23"/>
+                                <state key="normal" title="Yosemite">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="122" y="237" width="156" height="84"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="e5J-2l-bS1" kind="show" id="t5Q-Wc-754"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ONC-8H-PQX">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="23"/>
+                                <state key="normal" title="Wave">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="122" y="329" width="156" height="84"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="uIL-XB-pY9" kind="show" id="nab-NY-1HF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Xfv-G3-gHd"/>
+                                <exclude reference="zfe-u4-AA6"/>
+                                <exclude reference="ONC-8H-PQX"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Xfv-G3-gHd"/>
+                                <include reference="zfe-u4-AA6"/>
+                                <include reference="ONC-8H-PQX"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="Rv0-Ko-NtS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6a3-Lc-s2e" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1090.5" y="494.25"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="0BY-jh-mq7">
+            <objects>
+                <viewController id="e7I-ob-YxW" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ClK-fH-Ka8"/>
+                        <viewControllerLayoutGuide type="bottom" id="9ov-D9-K5K"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AV2-Eg-Qgf">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Giraffe_Ithala_KZN_South_Africa_Luca_Galuzzi_2004 [www.imagesplitter.net]-0-0" translatesAutoresizingMaskIntoConstraints="NO" id="G3L-Ct-VZ1">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="14" y="189" width="170" height="170"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Giraffe_Ithala_KZN_South_Africa_Luca_Galuzzi_2004 [www.imagesplitter.net]-0-1" translatesAutoresizingMaskIntoConstraints="NO" id="Meq-Qh-VQa">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="192" y="189" width="170" height="170"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Giraffe_Ithala_KZN_South_Africa_Luca_Galuzzi_2004 [www.imagesplitter.net]-1-0" translatesAutoresizingMaskIntoConstraints="NO" id="2bN-pV-xru">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="14" y="367" width="170" height="170"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Giraffe_Ithala_KZN_South_Africa_Luca_Galuzzi_2004 [www.imagesplitter.net]-1-1" translatesAutoresizingMaskIntoConstraints="NO" id="1hf-z5-DUC">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="192" y="367" width="170" height="170"/>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="G3L-Ct-VZ1"/>
+                                <exclude reference="Meq-Qh-VQa"/>
+                                <exclude reference="2bN-pV-xru"/>
+                                <exclude reference="1hf-z5-DUC"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="G3L-Ct-VZ1"/>
+                                <include reference="Meq-Qh-VQa"/>
+                                <include reference="2bN-pV-xru"/>
+                                <include reference="1hf-z5-DUC"/>
+                            </mask>
+                        </variation>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="4Eg-G8-SPT" appends="YES" id="860-m7-WD3"/>
+                            <outletCollection property="gestureRecognizers" destination="s1X-d3-jjK" appends="YES" id="C1K-EE-rql"/>
+                            <outletCollection property="gestureRecognizers" destination="qHS-DZ-cCX" appends="YES" id="7x8-aa-VYf"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l4T-s5-ezQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="4Eg-G8-SPT">
+                    <connections>
+                        <segue destination="6w4-A1-FOn" kind="show" id="deK-Ye-zjr"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="s1X-d3-jjK">
+                    <connections>
+                        <segue destination="jFI-bH-nrf" kind="show" id="4mf-bN-Ofc"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="qHS-DZ-cCX">
+                    <connections>
+                        <segue destination="gbm-li-GST" kind="show" id="5bz-R3-mxs"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-297" y="-1191"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="WAi-yG-TnU">
+            <objects>
+                <viewController id="jFI-bH-nrf" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y5O-KJ-TPi"/>
+                        <viewControllerLayoutGuide type="bottom" id="wyW-XL-0XX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="St1-n3-4Xw">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Giraffe_Ithala_KZN_South_Africa_Luca_Galuzzi_2004 [www.imagesplitter.net]-0-0" translatesAutoresizingMaskIntoConstraints="NO" id="lUg-5j-eKy">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="14" y="189" width="170" height="170"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Giraffe_Ithala_KZN_South_Africa_Luca_Galuzzi_2004 [www.imagesplitter.net]-0-1" translatesAutoresizingMaskIntoConstraints="NO" id="jGF-DI-zf5">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="192" y="189" width="170" height="170"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Giraffe_Ithala_KZN_South_Africa_Luca_Galuzzi_2004 [www.imagesplitter.net]-1-0" translatesAutoresizingMaskIntoConstraints="NO" id="E66-K6-CtE">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="14" y="367" width="170" height="170"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Giraffe_Ithala_KZN_South_Africa_Luca_Galuzzi_2004 [www.imagesplitter.net]-1-1" translatesAutoresizingMaskIntoConstraints="NO" id="dFK-9Q-FnU">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="192" y="367" width="170" height="170"/>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="lUg-5j-eKy"/>
+                                <exclude reference="jGF-DI-zf5"/>
+                                <exclude reference="E66-K6-CtE"/>
+                                <exclude reference="dFK-9Q-FnU"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="lUg-5j-eKy"/>
+                                <include reference="jGF-DI-zf5"/>
+                                <include reference="E66-K6-CtE"/>
+                                <include reference="dFK-9Q-FnU"/>
+                            </mask>
+                        </variation>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="SnR-3Z-ejr" appends="YES" id="jP2-B2-wRJ"/>
+                            <outletCollection property="gestureRecognizers" destination="PYE-gw-lsO" appends="YES" id="RfL-6t-a0m"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jip-vF-Ete" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="SnR-3Z-ejr">
+                    <connections>
+                        <segue destination="14h-HW-xqj" kind="show" id="UZ0-So-NRV"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="up" id="PYE-gw-lsO">
+                    <connections>
+                        <segue destination="e7I-ob-YxW" kind="show" id="tuH-xi-rC9"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-297" y="-486"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Jps-7F-Eig">
+            <objects>
+                <viewController id="6w4-A1-FOn" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Bng-z5-XtI"/>
+                        <viewControllerLayoutGuide type="bottom" id="5Vb-bb-I2b"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NiW-qe-41U">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Giraffe_Ithala_KZN_South_Africa_Luca_Galuzzi_2004 [www.imagesplitter.net]-0-0" translatesAutoresizingMaskIntoConstraints="NO" id="bvV-D2-N6H">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="14" y="189" width="170" height="170"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Giraffe_Ithala_KZN_South_Africa_Luca_Galuzzi_2004 [www.imagesplitter.net]-0-1" translatesAutoresizingMaskIntoConstraints="NO" id="2v6-wH-r3H">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="192" y="189" width="170" height="170"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Giraffe_Ithala_KZN_South_Africa_Luca_Galuzzi_2004 [www.imagesplitter.net]-1-0" translatesAutoresizingMaskIntoConstraints="NO" id="NmN-Tr-jOo">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="14" y="367" width="170" height="170"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Giraffe_Ithala_KZN_South_Africa_Luca_Galuzzi_2004 [www.imagesplitter.net]-1-1" translatesAutoresizingMaskIntoConstraints="NO" id="ay6-8z-4Dk">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="192" y="367" width="170" height="170"/>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="bvV-D2-N6H"/>
+                                <exclude reference="2v6-wH-r3H"/>
+                                <exclude reference="NmN-Tr-jOo"/>
+                                <exclude reference="ay6-8z-4Dk"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="bvV-D2-N6H"/>
+                                <include reference="2v6-wH-r3H"/>
+                                <include reference="NmN-Tr-jOo"/>
+                                <include reference="ay6-8z-4Dk"/>
+                            </mask>
+                        </variation>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="emZ-sl-4Kf" appends="YES" id="8r0-FJ-5uD"/>
+                            <outletCollection property="gestureRecognizers" destination="LbU-cL-dpR" appends="YES" id="fsp-Ef-GjG"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hv3-SY-dGk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="down" id="emZ-sl-4Kf">
+                    <connections>
+                        <segue destination="8WN-nu-VI5" kind="show" id="lob-iz-8Lk"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="LbU-cL-dpR">
+                    <connections>
+                        <segue destination="e7I-ob-YxW" kind="show" id="hRY-Sr-GrQ"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="423" y="-1191"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="O8p-qv-scx">
+            <objects>
+                <viewController id="14h-HW-xqj" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1gX-Ej-tL2"/>
+                        <viewControllerLayoutGuide type="bottom" id="d8g-L8-zFB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Oz1-kV-xrs">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Giraffe_Ithala_KZN_South_Africa_Luca_Galuzzi_2004 [www.imagesplitter.net]-0-0" translatesAutoresizingMaskIntoConstraints="NO" id="bxG-9X-RpP">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="14" y="189" width="170" height="170"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Giraffe_Ithala_KZN_South_Africa_Luca_Galuzzi_2004 [www.imagesplitter.net]-0-1" translatesAutoresizingMaskIntoConstraints="NO" id="XgC-Lh-qNT">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="192" y="189" width="170" height="170"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Giraffe_Ithala_KZN_South_Africa_Luca_Galuzzi_2004 [www.imagesplitter.net]-1-0" translatesAutoresizingMaskIntoConstraints="NO" id="fGG-Im-JhI">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="14" y="367" width="170" height="170"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Giraffe_Ithala_KZN_South_Africa_Luca_Galuzzi_2004 [www.imagesplitter.net]-1-1" translatesAutoresizingMaskIntoConstraints="NO" id="21g-uQ-oaN">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="192" y="367" width="170" height="170"/>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="bxG-9X-RpP"/>
+                                <exclude reference="XgC-Lh-qNT"/>
+                                <exclude reference="fGG-Im-JhI"/>
+                                <exclude reference="21g-uQ-oaN"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="bxG-9X-RpP"/>
+                                <include reference="XgC-Lh-qNT"/>
+                                <include reference="fGG-Im-JhI"/>
+                                <include reference="21g-uQ-oaN"/>
+                            </mask>
+                        </variation>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="DOq-4n-LeS" appends="YES" id="VeX-aq-vtX"/>
+                            <outletCollection property="gestureRecognizers" destination="gHl-ay-8MW" appends="YES" id="9yO-Zu-FdQ"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iJO-Qb-YJp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="up" id="DOq-4n-LeS">
+                    <connections>
+                        <segue destination="n8G-fp-ALQ" kind="show" id="776-VC-hgH"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="gHl-ay-8MW">
+                    <connections>
+                        <segue destination="jFI-bH-nrf" kind="show" id="rm8-XC-2FL"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="423" y="-486"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="mVQ-O8-F9D">
+            <objects>
+                <viewController id="n8G-fp-ALQ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kl9-V9-Bz0"/>
+                        <viewControllerLayoutGuide type="bottom" id="FFx-i4-9jM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="shs-Ry-CKX">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Giraffe_Ithala_KZN_South_Africa_Luca_Galuzzi_2004 [www.imagesplitter.net]-0-0" translatesAutoresizingMaskIntoConstraints="NO" id="ehf-tj-GQY">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="14" y="189" width="170" height="170"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Giraffe_Ithala_KZN_South_Africa_Luca_Galuzzi_2004 [www.imagesplitter.net]-0-1" translatesAutoresizingMaskIntoConstraints="NO" id="e9m-WQ-DU9">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="192" y="189" width="170" height="170"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Giraffe_Ithala_KZN_South_Africa_Luca_Galuzzi_2004 [www.imagesplitter.net]-1-0" translatesAutoresizingMaskIntoConstraints="NO" id="DXw-4q-4k7">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="14" y="367" width="170" height="170"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Giraffe_Ithala_KZN_South_Africa_Luca_Galuzzi_2004 [www.imagesplitter.net]-1-1" translatesAutoresizingMaskIntoConstraints="NO" id="u5s-Ej-VTl">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="192" y="367" width="170" height="170"/>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="ehf-tj-GQY"/>
+                                <exclude reference="e9m-WQ-DU9"/>
+                                <exclude reference="DXw-4q-4k7"/>
+                                <exclude reference="u5s-Ej-VTl"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="ehf-tj-GQY"/>
+                                <include reference="e9m-WQ-DU9"/>
+                                <include reference="DXw-4q-4k7"/>
+                                <include reference="u5s-Ej-VTl"/>
+                            </mask>
+                        </variation>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="w32-8i-d1s" appends="YES" id="Qcy-c5-wwi"/>
+                            <outletCollection property="gestureRecognizers" destination="z8V-cV-xv4" appends="YES" id="fHr-BZ-d0R"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3mB-6k-7MT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="w32-8i-d1s">
+                    <connections>
+                        <segue destination="8WN-nu-VI5" kind="show" id="qbn-57-j41"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="z8V-cV-xv4">
+                    <connections>
+                        <segue destination="14h-HW-xqj" kind="show" id="0cl-NU-1eq"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1221" y="-486"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="hvU-aP-He8">
+            <objects>
+                <viewController id="8WN-nu-VI5" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AS5-EY-nto"/>
+                        <viewControllerLayoutGuide type="bottom" id="39C-QG-sD7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DMj-NZ-BGB">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Giraffe_Ithala_KZN_South_Africa_Luca_Galuzzi_2004 [www.imagesplitter.net]-0-0" translatesAutoresizingMaskIntoConstraints="NO" id="evk-FG-A6e">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="14" y="189" width="170" height="170"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Giraffe_Ithala_KZN_South_Africa_Luca_Galuzzi_2004 [www.imagesplitter.net]-0-1" translatesAutoresizingMaskIntoConstraints="NO" id="njM-J1-M6k">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="192" y="189" width="170" height="170"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Giraffe_Ithala_KZN_South_Africa_Luca_Galuzzi_2004 [www.imagesplitter.net]-1-0" translatesAutoresizingMaskIntoConstraints="NO" id="qMG-Df-Dhx">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="14" y="367" width="170" height="170"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Giraffe_Ithala_KZN_South_Africa_Luca_Galuzzi_2004 [www.imagesplitter.net]-1-1" translatesAutoresizingMaskIntoConstraints="NO" id="AqE-wo-Opr">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="192" y="367" width="170" height="170"/>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="evk-FG-A6e"/>
+                                <exclude reference="njM-J1-M6k"/>
+                                <exclude reference="qMG-Df-Dhx"/>
+                                <exclude reference="AqE-wo-Opr"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="evk-FG-A6e"/>
+                                <include reference="njM-J1-M6k"/>
+                                <include reference="qMG-Df-Dhx"/>
+                                <include reference="AqE-wo-Opr"/>
+                            </mask>
+                        </variation>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="DuN-cN-lbH" appends="YES" id="bbq-7o-eqi"/>
+                            <outletCollection property="gestureRecognizers" destination="sBx-2E-sci" appends="YES" id="BJN-SE-3Wo"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="el2-id-rTM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="DuN-cN-lbH">
+                    <connections>
+                        <segue destination="n8G-fp-ALQ" kind="show" id="76O-Gj-jiZ"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="up" id="sBx-2E-sci">
+                    <connections>
+                        <segue destination="6w4-A1-FOn" kind="show" id="QMl-Ns-NL3"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1221" y="-1191"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="fFP-6Q-FWC">
+            <objects>
+                <viewController id="e5J-2l-bS1" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0yd-iP-gk2"/>
+                        <viewControllerLayoutGuide type="bottom" id="ffX-TM-X6m"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hvU-he-jhh">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home-img-01 [www.imagesplitter.net]-0-0" translatesAutoresizingMaskIntoConstraints="NO" id="LaA-fW-bbQ">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="14" y="189" width="170" height="170"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Giraffe_Ithala_KZN_South_Africa_Luca_Galuzzi_2004 [www.imagesplitter.net]-0-1" translatesAutoresizingMaskIntoConstraints="NO" id="H7V-dq-4hF">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="192" y="189" width="170" height="170"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Giraffe_Ithala_KZN_South_Africa_Luca_Galuzzi_2004 [www.imagesplitter.net]-1-0" translatesAutoresizingMaskIntoConstraints="NO" id="cFB-9H-JbH">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="14" y="367" width="170" height="170"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Giraffe_Ithala_KZN_South_Africa_Luca_Galuzzi_2004 [www.imagesplitter.net]-1-1" translatesAutoresizingMaskIntoConstraints="NO" id="lvq-dk-F2E">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="192" y="367" width="170" height="170"/>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="LaA-fW-bbQ"/>
+                                <exclude reference="H7V-dq-4hF"/>
+                                <exclude reference="cFB-9H-JbH"/>
+                                <exclude reference="lvq-dk-F2E"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="LaA-fW-bbQ"/>
+                                <include reference="H7V-dq-4hF"/>
+                                <include reference="cFB-9H-JbH"/>
+                                <include reference="lvq-dk-F2E"/>
+                            </mask>
+                        </variation>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="V4x-pT-O6s" appends="YES" id="NH4-kE-3IQ"/>
+                            <outletCollection property="gestureRecognizers" destination="vLr-Xe-e1s" appends="YES" id="s7x-QV-aEg"/>
+                            <outletCollection property="gestureRecognizers" destination="Sdt-oM-kec" appends="YES" id="Yoq-LE-lDB"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yJr-5X-2N3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="V4x-pT-O6s">
+                    <connections>
+                        <segue destination="WC7-Kk-34m" kind="show" id="Um2-gn-yHc"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="vLr-Xe-e1s">
+                    <connections>
+                        <segue destination="pBp-iQ-nae" kind="show" id="H8I-Cz-f8C"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="Sdt-oM-kec">
+                    <connections>
+                        <segue destination="gbm-li-GST" kind="show" id="1CZ-Ol-oZ2"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-297" y="180"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="7MW-3C-WDT">
+            <objects>
+                <viewController id="pBp-iQ-nae" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ere-i6-ydx"/>
+                        <viewControllerLayoutGuide type="bottom" id="wmg-KR-k4F"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="z85-0e-8Cp">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home-img-01 [www.imagesplitter.net]-0-0" translatesAutoresizingMaskIntoConstraints="NO" id="VC3-ZC-jPo">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="14" y="189" width="170" height="170"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Giraffe_Ithala_KZN_South_Africa_Luca_Galuzzi_2004 [www.imagesplitter.net]-0-1" translatesAutoresizingMaskIntoConstraints="NO" id="G6n-r5-Yg2">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="192" y="189" width="170" height="170"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home-img-01 [www.imagesplitter.net]-1-0" translatesAutoresizingMaskIntoConstraints="NO" id="V1o-47-7xg">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="14" y="367" width="170" height="170"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Giraffe_Ithala_KZN_South_Africa_Luca_Galuzzi_2004 [www.imagesplitter.net]-1-1" translatesAutoresizingMaskIntoConstraints="NO" id="UeH-Hf-aHv">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="192" y="367" width="170" height="170"/>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="VC3-ZC-jPo"/>
+                                <exclude reference="G6n-r5-Yg2"/>
+                                <exclude reference="V1o-47-7xg"/>
+                                <exclude reference="UeH-Hf-aHv"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="VC3-ZC-jPo"/>
+                                <include reference="G6n-r5-Yg2"/>
+                                <include reference="V1o-47-7xg"/>
+                                <include reference="UeH-Hf-aHv"/>
+                            </mask>
+                        </variation>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="oig-LP-kq1" appends="YES" id="Zpp-rf-dZU"/>
+                            <outletCollection property="gestureRecognizers" destination="KTC-LN-e8Y" appends="YES" id="Gmf-zi-6fx"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lWO-Zc-csV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="oig-LP-kq1">
+                    <connections>
+                        <segue destination="VM8-Yi-xQu" kind="show" id="WbA-Tc-9Ee"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="up" id="KTC-LN-e8Y">
+                    <connections>
+                        <segue destination="e5J-2l-bS1" kind="show" id="kWi-MT-bjZ"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-297" y="885"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="wH9-zW-DYw">
+            <objects>
+                <viewController id="WC7-Kk-34m" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mvd-Mf-iqU"/>
+                        <viewControllerLayoutGuide type="bottom" id="w8L-8w-RNR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HgF-45-Phf">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home-img-01 [www.imagesplitter.net]-0-0" translatesAutoresizingMaskIntoConstraints="NO" id="4Dl-cM-7jm">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="14" y="189" width="170" height="170"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home-img-01 [www.imagesplitter.net]-0-1" translatesAutoresizingMaskIntoConstraints="NO" id="wAL-2V-ctr">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="192" y="189" width="170" height="170"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Giraffe_Ithala_KZN_South_Africa_Luca_Galuzzi_2004 [www.imagesplitter.net]-1-0" translatesAutoresizingMaskIntoConstraints="NO" id="gLo-gW-9I8">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="14" y="367" width="170" height="170"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Giraffe_Ithala_KZN_South_Africa_Luca_Galuzzi_2004 [www.imagesplitter.net]-1-1" translatesAutoresizingMaskIntoConstraints="NO" id="sUa-7K-lDF">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="192" y="367" width="170" height="170"/>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="4Dl-cM-7jm"/>
+                                <exclude reference="wAL-2V-ctr"/>
+                                <exclude reference="gLo-gW-9I8"/>
+                                <exclude reference="sUa-7K-lDF"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="4Dl-cM-7jm"/>
+                                <include reference="wAL-2V-ctr"/>
+                                <include reference="gLo-gW-9I8"/>
+                                <include reference="sUa-7K-lDF"/>
+                            </mask>
+                        </variation>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="G0S-KU-B5f" appends="YES" id="5tl-mQ-YVb"/>
+                            <outletCollection property="gestureRecognizers" destination="9KX-E1-gyE" appends="YES" id="zs6-YB-O1Z"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xW1-2M-EAY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="down" id="G0S-KU-B5f">
+                    <connections>
+                        <segue destination="thd-Nh-mV8" kind="show" id="Q1O-ie-WVu"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="9KX-E1-gyE">
+                    <connections>
+                        <segue destination="e5J-2l-bS1" kind="show" id="daY-a7-nf5"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="423" y="180"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="fdK-Z4-kCf">
+            <objects>
+                <viewController id="VM8-Yi-xQu" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rX5-ZS-6aE"/>
+                        <viewControllerLayoutGuide type="bottom" id="hOV-4R-pN0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1Rk-Y0-Z5N">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Giraffe_Ithala_KZN_South_Africa_Luca_Galuzzi_2004 [www.imagesplitter.net]-0-1" translatesAutoresizingMaskIntoConstraints="NO" id="6U7-fh-77M">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="192" y="189" width="170" height="170"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home-img-01 [www.imagesplitter.net]-1-0" translatesAutoresizingMaskIntoConstraints="NO" id="MoE-NH-zvu">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="14" y="367" width="170" height="170"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home-img-01 [www.imagesplitter.net]-1-1" translatesAutoresizingMaskIntoConstraints="NO" id="Y9W-6T-NHV">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="192" y="367" width="170" height="170"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home-img-01 [www.imagesplitter.net]-0-0" translatesAutoresizingMaskIntoConstraints="NO" id="hbG-vm-Rid">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="14" y="189" width="170" height="170"/>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="6U7-fh-77M"/>
+                                <exclude reference="MoE-NH-zvu"/>
+                                <exclude reference="Y9W-6T-NHV"/>
+                                <exclude reference="hbG-vm-Rid"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="6U7-fh-77M"/>
+                                <include reference="MoE-NH-zvu"/>
+                                <include reference="Y9W-6T-NHV"/>
+                                <include reference="hbG-vm-Rid"/>
+                            </mask>
+                        </variation>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="hF5-Tw-KRW" appends="YES" id="Mdk-wj-yv0"/>
+                            <outletCollection property="gestureRecognizers" destination="JOG-cy-GAv" appends="YES" id="Uzz-lD-VCu"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M7f-L2-EwR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="up" id="hF5-Tw-KRW">
+                    <connections>
+                        <segue destination="Bwb-8G-DbU" kind="show" id="Siy-Y8-ypw"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="JOG-cy-GAv">
+                    <connections>
+                        <segue destination="pBp-iQ-nae" kind="show" id="meA-4f-jHu"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="423" y="885"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="q0m-tO-IRM">
+            <objects>
+                <viewController id="Bwb-8G-DbU" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sXK-d2-ZGU"/>
+                        <viewControllerLayoutGuide type="bottom" id="vjP-pD-KLY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IeN-Fk-CUx">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home-img-01 [www.imagesplitter.net]-0-0" translatesAutoresizingMaskIntoConstraints="NO" id="9Ms-2Q-oHd">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="14" y="189" width="170" height="170"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home-img-01 [www.imagesplitter.net]-0-1" translatesAutoresizingMaskIntoConstraints="NO" id="qrY-zf-XjD">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="192" y="189" width="170" height="170"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home-img-01 [www.imagesplitter.net]-1-0" translatesAutoresizingMaskIntoConstraints="NO" id="ijs-yD-RDU">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="14" y="367" width="170" height="170"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home-img-01 [www.imagesplitter.net]-1-1" translatesAutoresizingMaskIntoConstraints="NO" id="rrd-9v-b3T">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="192" y="367" width="170" height="170"/>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="9Ms-2Q-oHd"/>
+                                <exclude reference="qrY-zf-XjD"/>
+                                <exclude reference="ijs-yD-RDU"/>
+                                <exclude reference="rrd-9v-b3T"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="9Ms-2Q-oHd"/>
+                                <include reference="qrY-zf-XjD"/>
+                                <include reference="ijs-yD-RDU"/>
+                                <include reference="rrd-9v-b3T"/>
+                            </mask>
+                        </variation>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="2xC-Qf-3Oc" appends="YES" id="jfO-fR-cZr"/>
+                            <outletCollection property="gestureRecognizers" destination="qIV-lG-KjS" appends="YES" id="SO3-xY-9Nh"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WF1-6t-Kal" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="2xC-Qf-3Oc">
+                    <connections>
+                        <segue destination="thd-Nh-mV8" kind="show" id="eDy-vg-YpP"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="qIV-lG-KjS">
+                    <connections>
+                        <segue destination="VM8-Yi-xQu" kind="show" id="GWb-D5-VAd"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1221" y="885"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="xHI-xY-Bfk">
+            <objects>
+                <viewController id="thd-Nh-mV8" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wRT-1a-0z0"/>
+                        <viewControllerLayoutGuide type="bottom" id="6H1-6t-pbk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bbS-Pe-eRP">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home-img-01 [www.imagesplitter.net]-0-0" translatesAutoresizingMaskIntoConstraints="NO" id="bgA-wY-N4c">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="14" y="189" width="170" height="170"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home-img-01 [www.imagesplitter.net]-0-1" translatesAutoresizingMaskIntoConstraints="NO" id="sUK-vq-mFQ">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="192" y="189" width="170" height="170"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Giraffe_Ithala_KZN_South_Africa_Luca_Galuzzi_2004 [www.imagesplitter.net]-1-0" translatesAutoresizingMaskIntoConstraints="NO" id="kH5-vy-9ey">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="14" y="367" width="170" height="170"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home-img-01 [www.imagesplitter.net]-1-1" translatesAutoresizingMaskIntoConstraints="NO" id="f8b-db-z0J">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="192" y="367" width="170" height="170"/>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="bgA-wY-N4c"/>
+                                <exclude reference="sUK-vq-mFQ"/>
+                                <exclude reference="kH5-vy-9ey"/>
+                                <exclude reference="f8b-db-z0J"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="bgA-wY-N4c"/>
+                                <include reference="sUK-vq-mFQ"/>
+                                <include reference="kH5-vy-9ey"/>
+                                <include reference="f8b-db-z0J"/>
+                            </mask>
+                        </variation>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="5vO-Dc-clT" appends="YES" id="Pfu-bd-53w"/>
+                            <outletCollection property="gestureRecognizers" destination="lhG-ao-Wom" appends="YES" id="R9t-2j-NQi"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pxd-3B-0nd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="5vO-Dc-clT">
+                    <connections>
+                        <segue destination="Bwb-8G-DbU" kind="show" id="5Hs-9I-4a9"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="up" id="lhG-ao-Wom">
+                    <connections>
+                        <segue destination="WC7-Kk-34m" kind="show" id="uXW-Vk-z5N"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1221" y="180"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="vh5-cV-7u3">
+            <objects>
+                <viewController modalTransitionStyle="crossDissolve" id="uIL-XB-pY9" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RPh-lf-KFb"/>
+                        <viewControllerLayoutGuide type="bottom" id="tMA-H0-8Od"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Wwi-EW-DTu">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Giraffe_Ithala_KZN_South_Africa_Luca_Galuzzi_2004 [www.imagesplitter.net]-0-1" translatesAutoresizingMaskIntoConstraints="NO" id="q64-xO-LlZ">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="192" y="189" width="170" height="170"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Giraffe_Ithala_KZN_South_Africa_Luca_Galuzzi_2004 [www.imagesplitter.net]-1-0" translatesAutoresizingMaskIntoConstraints="NO" id="Gw2-4z-wqV">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="14" y="367" width="170" height="170"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Giraffe_Ithala_KZN_South_Africa_Luca_Galuzzi_2004 [www.imagesplitter.net]-1-1" translatesAutoresizingMaskIntoConstraints="NO" id="0To-cU-1x2">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="192" y="367" width="170" height="170"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="16025-ocean-wave-1280x800-beach-wallpaper [www.imagesplitter.net]-0-0" translatesAutoresizingMaskIntoConstraints="NO" id="dZB-Xp-TgH">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="14" y="189" width="170" height="170"/>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="q64-xO-LlZ"/>
+                                <exclude reference="Gw2-4z-wqV"/>
+                                <exclude reference="0To-cU-1x2"/>
+                                <exclude reference="dZB-Xp-TgH"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="q64-xO-LlZ"/>
+                                <include reference="Gw2-4z-wqV"/>
+                                <include reference="0To-cU-1x2"/>
+                                <include reference="dZB-Xp-TgH"/>
+                            </mask>
+                        </variation>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="4FA-DS-Bea" appends="YES" id="r7f-v5-KgM"/>
+                            <outletCollection property="gestureRecognizers" destination="h7e-vu-f0c" appends="YES" id="bTS-Aa-V07"/>
+                            <outletCollection property="gestureRecognizers" destination="qEV-1L-Vei" appends="YES" id="TCb-sn-qNt"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hjh-DY-38M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="4FA-DS-Bea">
+                    <connections>
+                        <segue destination="wKv-cr-7ca" kind="show" id="zOD-mA-1BD"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="h7e-vu-f0c">
+                    <connections>
+                        <segue destination="dFg-fD-Td9" kind="show" id="qS8-vB-b96"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="qEV-1L-Vei">
+                    <connections>
+                        <segue destination="gbm-li-GST" kind="show" id="dFe-p9-XUP"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-297" y="1554"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="6V2-F1-8dT">
+            <objects>
+                <viewController modalTransitionStyle="crossDissolve" id="dFg-fD-Td9" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Bmo-jP-C8f"/>
+                        <viewControllerLayoutGuide type="bottom" id="Mh4-zl-p1P"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="r9v-it-hKS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Giraffe_Ithala_KZN_South_Africa_Luca_Galuzzi_2004 [www.imagesplitter.net]-0-1" translatesAutoresizingMaskIntoConstraints="NO" id="94p-HY-Hyn">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="192" y="189" width="170" height="170"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="16025-ocean-wave-1280x800-beach-wallpaper [www.imagesplitter.net]-1-0" translatesAutoresizingMaskIntoConstraints="NO" id="t4W-AH-iHr">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="14" y="367" width="170" height="170"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Giraffe_Ithala_KZN_South_Africa_Luca_Galuzzi_2004 [www.imagesplitter.net]-1-1" translatesAutoresizingMaskIntoConstraints="NO" id="qBH-Xf-cZC">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="192" y="367" width="170" height="170"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="16025-ocean-wave-1280x800-beach-wallpaper [www.imagesplitter.net]-0-0" translatesAutoresizingMaskIntoConstraints="NO" id="TuT-aE-cE8">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="14" y="189" width="170" height="170"/>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="94p-HY-Hyn"/>
+                                <exclude reference="t4W-AH-iHr"/>
+                                <exclude reference="qBH-Xf-cZC"/>
+                                <exclude reference="TuT-aE-cE8"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="94p-HY-Hyn"/>
+                                <include reference="t4W-AH-iHr"/>
+                                <include reference="qBH-Xf-cZC"/>
+                                <include reference="TuT-aE-cE8"/>
+                            </mask>
+                        </variation>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Qkc-wk-XcC" appends="YES" id="uny-Rm-sTl"/>
+                            <outletCollection property="gestureRecognizers" destination="zsi-z6-Gwg" appends="YES" id="R97-CA-ZPd"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Ja-0F-gPh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="up" id="Qkc-wk-XcC">
+                    <connections>
+                        <segue destination="uIL-XB-pY9" kind="show" id="JeU-Al-J3z"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="zsi-z6-Gwg">
+                    <connections>
+                        <segue destination="Fkh-mJ-u0T" kind="show" id="fvn-xb-okS"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-297" y="2259"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="MQ5-gI-Fgc">
+            <objects>
+                <viewController modalTransitionStyle="crossDissolve" id="wKv-cr-7ca" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NbS-k4-RAd"/>
+                        <viewControllerLayoutGuide type="bottom" id="poL-Hy-RCi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="X1c-Bq-ZhE">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="16025-ocean-wave-1280x800-beach-wallpaper [www.imagesplitter.net]-0-0" translatesAutoresizingMaskIntoConstraints="NO" id="AAp-At-yRt">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="14" y="189" width="170" height="170"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Giraffe_Ithala_KZN_South_Africa_Luca_Galuzzi_2004 [www.imagesplitter.net]-1-0" translatesAutoresizingMaskIntoConstraints="NO" id="Zp2-Zj-8vj">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="14" y="367" width="170" height="170"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Giraffe_Ithala_KZN_South_Africa_Luca_Galuzzi_2004 [www.imagesplitter.net]-1-1" translatesAutoresizingMaskIntoConstraints="NO" id="hwX-gn-QGh">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="192" y="367" width="170" height="170"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="16025-ocean-wave-1280x800-beach-wallpaper [www.imagesplitter.net]-0-1" translatesAutoresizingMaskIntoConstraints="NO" id="iEt-0S-Hhd">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="192" y="189" width="170" height="170"/>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="AAp-At-yRt"/>
+                                <exclude reference="Zp2-Zj-8vj"/>
+                                <exclude reference="hwX-gn-QGh"/>
+                                <exclude reference="iEt-0S-Hhd"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="AAp-At-yRt"/>
+                                <include reference="Zp2-Zj-8vj"/>
+                                <include reference="hwX-gn-QGh"/>
+                                <include reference="iEt-0S-Hhd"/>
+                            </mask>
+                        </variation>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="cZr-px-Lb9" appends="YES" id="JG0-yc-fAd"/>
+                            <outletCollection property="gestureRecognizers" destination="p9B-Mk-xPm" appends="YES" id="YXE-vJ-UCf"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QGz-0Q-GQL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="cZr-px-Lb9">
+                    <connections>
+                        <segue destination="uIL-XB-pY9" kind="show" id="C7x-Gr-dgo"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="p9B-Mk-xPm">
+                    <connections>
+                        <segue destination="bTe-Kt-CGT" kind="show" id="cpi-tk-KlR"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="393" y="1554"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="fCk-IU-T9h">
+            <objects>
+                <viewController modalTransitionStyle="crossDissolve" id="Fkh-mJ-u0T" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NUO-Se-Nrp"/>
+                        <viewControllerLayoutGuide type="bottom" id="g63-cg-lLP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="clZ-II-CKd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="16025-ocean-wave-1280x800-beach-wallpaper [www.imagesplitter.net]-0-0" translatesAutoresizingMaskIntoConstraints="NO" id="KqZ-6R-p7b">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="14" y="189" width="170" height="170"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Giraffe_Ithala_KZN_South_Africa_Luca_Galuzzi_2004 [www.imagesplitter.net]-0-1" translatesAutoresizingMaskIntoConstraints="NO" id="mFs-2Y-LLz">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="192" y="189" width="170" height="170"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="16025-ocean-wave-1280x800-beach-wallpaper [www.imagesplitter.net]-1-0" translatesAutoresizingMaskIntoConstraints="NO" id="dRG-yh-tXc">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="14" y="367" width="170" height="170"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="16025-ocean-wave-1280x800-beach-wallpaper [www.imagesplitter.net]-1-1" translatesAutoresizingMaskIntoConstraints="NO" id="yhF-Dt-xVN">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="192" y="367" width="170" height="170"/>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="KqZ-6R-p7b"/>
+                                <exclude reference="mFs-2Y-LLz"/>
+                                <exclude reference="dRG-yh-tXc"/>
+                                <exclude reference="yhF-Dt-xVN"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="KqZ-6R-p7b"/>
+                                <include reference="mFs-2Y-LLz"/>
+                                <include reference="dRG-yh-tXc"/>
+                                <include reference="yhF-Dt-xVN"/>
+                            </mask>
+                        </variation>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="EHZ-Ra-lYL" appends="YES" id="a9e-0U-Td7"/>
+                            <outletCollection property="gestureRecognizers" destination="mBe-uv-R0o" appends="YES" id="iMT-ug-J7h"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e6u-PF-yRq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="EHZ-Ra-lYL">
+                    <connections>
+                        <segue destination="dFg-fD-Td9" kind="show" id="1Ja-b7-z19"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="up" id="mBe-uv-R0o">
+                    <connections>
+                        <segue destination="8uw-yw-w6Z" kind="show" id="Crs-NM-8a3"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="393" y="2259"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="P7J-DH-e0m">
+            <objects>
+                <viewController modalTransitionStyle="crossDissolve" id="8uw-yw-w6Z" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UXA-Pp-b6A"/>
+                        <viewControllerLayoutGuide type="bottom" id="LQf-7V-ied"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aSb-op-aPI">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="16025-ocean-wave-1280x800-beach-wallpaper [www.imagesplitter.net]-0-0" translatesAutoresizingMaskIntoConstraints="NO" id="gNN-lZ-oKS">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="14" y="189" width="170" height="170"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="16025-ocean-wave-1280x800-beach-wallpaper [www.imagesplitter.net]-0-1" translatesAutoresizingMaskIntoConstraints="NO" id="bcg-Vf-IFM">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="192" y="189" width="170" height="170"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="16025-ocean-wave-1280x800-beach-wallpaper [www.imagesplitter.net]-1-0" translatesAutoresizingMaskIntoConstraints="NO" id="AxK-5A-f5m">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="14" y="367" width="170" height="170"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="16025-ocean-wave-1280x800-beach-wallpaper [www.imagesplitter.net]-1-1" translatesAutoresizingMaskIntoConstraints="NO" id="7NC-rz-6uQ">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="192" y="367" width="170" height="170"/>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="gNN-lZ-oKS"/>
+                                <exclude reference="bcg-Vf-IFM"/>
+                                <exclude reference="AxK-5A-f5m"/>
+                                <exclude reference="7NC-rz-6uQ"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="gNN-lZ-oKS"/>
+                                <include reference="bcg-Vf-IFM"/>
+                                <include reference="AxK-5A-f5m"/>
+                                <include reference="7NC-rz-6uQ"/>
+                            </mask>
+                        </variation>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="liM-2X-CIW" appends="YES" id="mFk-Vu-S9k"/>
+                            <outletCollection property="gestureRecognizers" destination="O9F-eT-Qst" appends="YES" id="sAi-qi-Ipv"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bsJ-Rd-ksK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="down" id="liM-2X-CIW">
+                    <connections>
+                        <segue destination="Fkh-mJ-u0T" kind="show" id="I0c-qE-esn"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="O9F-eT-Qst">
+                    <connections>
+                        <segue destination="bTe-Kt-CGT" kind="show" id="AwU-gE-xM6"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1182" y="2259"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="2GF-3Y-1AJ">
+            <objects>
+                <viewController modalTransitionStyle="crossDissolve" id="bTe-Kt-CGT" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uPu-dT-7TQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="W21-8Z-CYo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nJ0-Rm-Ab8">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="16025-ocean-wave-1280x800-beach-wallpaper [www.imagesplitter.net]-0-0" translatesAutoresizingMaskIntoConstraints="NO" id="ePZ-cB-mbY">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="14" y="189" width="170" height="170"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="16025-ocean-wave-1280x800-beach-wallpaper [www.imagesplitter.net]-0-1" translatesAutoresizingMaskIntoConstraints="NO" id="PLP-c3-FR5">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="192" y="189" width="170" height="170"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Giraffe_Ithala_KZN_South_Africa_Luca_Galuzzi_2004 [www.imagesplitter.net]-1-0" translatesAutoresizingMaskIntoConstraints="NO" id="swo-zg-MJr">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="14" y="367" width="170" height="170"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="16025-ocean-wave-1280x800-beach-wallpaper [www.imagesplitter.net]-1-1" translatesAutoresizingMaskIntoConstraints="NO" id="WUj-Hq-auQ">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="192" y="367" width="170" height="170"/>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="ePZ-cB-mbY"/>
+                                <exclude reference="PLP-c3-FR5"/>
+                                <exclude reference="swo-zg-MJr"/>
+                                <exclude reference="WUj-Hq-auQ"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="ePZ-cB-mbY"/>
+                                <include reference="PLP-c3-FR5"/>
+                                <include reference="swo-zg-MJr"/>
+                                <include reference="WUj-Hq-auQ"/>
+                            </mask>
+                        </variation>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="4tw-KQ-Czp" appends="YES" id="Sj1-wc-uxb"/>
+                            <outletCollection property="gestureRecognizers" destination="fnf-1k-0IV" appends="YES" id="GkL-Pt-Gdt"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="olx-C3-dSN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="up" id="4tw-KQ-Czp">
+                    <connections>
+                        <segue destination="wKv-cr-7ca" kind="show" id="nod-FL-VAU"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="fnf-1k-0IV">
+                    <connections>
+                        <segue destination="8uw-yw-w6Z" kind="show" id="8rz-eY-BiO"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1191" y="1554"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="16025-ocean-wave-1280x800-beach-wallpaper [www.imagesplitter.net]-0-0" width="640" height="400"/>
+        <image name="16025-ocean-wave-1280x800-beach-wallpaper [www.imagesplitter.net]-0-1" width="640" height="400"/>
+        <image name="16025-ocean-wave-1280x800-beach-wallpaper [www.imagesplitter.net]-1-0" width="640" height="400"/>
+        <image name="16025-ocean-wave-1280x800-beach-wallpaper [www.imagesplitter.net]-1-1" width="640" height="400"/>
+        <image name="Giraffe_Ithala_KZN_South_Africa_Luca_Galuzzi_2004 [www.imagesplitter.net]-0-0" width="666" height="666"/>
+        <image name="Giraffe_Ithala_KZN_South_Africa_Luca_Galuzzi_2004 [www.imagesplitter.net]-0-1" width="666" height="666"/>
+        <image name="Giraffe_Ithala_KZN_South_Africa_Luca_Galuzzi_2004 [www.imagesplitter.net]-1-0" width="666" height="666"/>
+        <image name="Giraffe_Ithala_KZN_South_Africa_Luca_Galuzzi_2004 [www.imagesplitter.net]-1-1" width="666" height="666"/>
+        <image name="home-img-01 [www.imagesplitter.net]-0-0" width="623" height="498"/>
+        <image name="home-img-01 [www.imagesplitter.net]-0-1" width="623" height="498"/>
+        <image name="home-img-01 [www.imagesplitter.net]-1-0" width="623" height="498"/>
+        <image name="home-img-01 [www.imagesplitter.net]-1-1" width="623" height="498"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="qS8-vB-b96"/>
+        <segue reference="nab-NY-1HF"/>
+        <segue reference="dFe-p9-XUP"/>
+        <segue reference="Ju9-gw-RGl"/>
+        <segue reference="t5Q-Wc-754"/>
+        <segue reference="5Hs-9I-4a9"/>
+        <segue reference="Q1O-ie-WVu"/>
+        <segue reference="Um2-gn-yHc"/>
+        <segue reference="776-VC-hgH"/>
+        <segue reference="0cl-NU-1eq"/>
+        <segue reference="AwU-gE-xM6"/>
+        <segue reference="8rz-eY-BiO"/>
+        <segue reference="H8I-Cz-f8C"/>
+        <segue reference="4mf-bN-Ofc"/>
+        <segue reference="zOD-mA-1BD"/>
+        <segue reference="qbn-57-j41"/>
+        <segue reference="deK-Ye-zjr"/>
+        <segue reference="GWb-D5-VAd"/>
+        <segue reference="I0c-qE-esn"/>
+    </inferredMetricsTieBreakers>
+</document>
